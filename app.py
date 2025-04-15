@@ -34,6 +34,9 @@ def upload():
         return jsonify({'error': 'No "Lead Time" column found.'})
 
     last_df = df.copy()
+function downloadReport() {
+  window.location.href = '/download_report';
+}
 
     results = {
         'average_lead_time': round(df['Lead Time'].mean(), 2),
