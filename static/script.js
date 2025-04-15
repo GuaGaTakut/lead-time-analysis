@@ -33,3 +33,6 @@ function uploadFile() {
     console.error('Upload failed', err);
   });
 }
+function downloadReport() {
+  window.location.href = '/download_report';
+}
